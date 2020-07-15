@@ -1,0 +1,195 @@
+html{
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    position: relative;
+    width: 1440px;
+    height: 900px;
+    background-image: url("images/bg-intro-desktop.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: hsl(0, 100%, 74%);
+    z-index: -1;
+}
+.container{
+    width:80%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.info{
+    padding-right: 5%;
+    width: 45%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.info h1{
+    font-size: 3em;
+    font-weight: 700;
+    color: white;
+    line-height: 1.1em;
+}
+.info p{
+    font-weight: 400;
+    color: honeydew;
+}
+.form_section{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.free{
+    width: 90%;
+    height: 60px;
+    border-radius: 10px;
+    background-color: hsl(248, 32%, 49%);
+    color: whitesmoke;
+    box-shadow: 0px 7px 0px 0px rgba(0,0,0,0.15);
+    margin-bottom: 1.5em;
+}
+.free p{
+    width: 100%;
+    text-align: center;
+    font-weight: 400;
+}
+.form_box{
+    background-color: white;
+    width: 90%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 8px 0px 0px rgba(0,0,0,0.15);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+}
+.form{
+    margin-top: 3em;
+    width: 80%;
+    height: auto;
+}
+.name,
+.last,
+.email,
+.password{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+}
+.name .name_input,
+.last .last_input,
+.email .email_input,
+.password .password_input{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.name .name_input input,
+.last .last_input input,
+.email .email_input input,
+.password .password_input input{
+    width: 80%;
+    padding-right: 13%;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid hsl(249, 10%, 26%) ;
+    padding-left: 2em;
+    font-size: 16px;
+    outline: none;
+}
+.name .name_input img,
+.last .last_input img,
+.email .email_input img,
+.password .password_input img{
+    position: absolute;
+    top: .9em;
+    right: 1em;
+    height: auto;
+
+    visibility: hidden; /* visible */
+}
+.name p,
+.last p,
+.email p,
+.password p{
+    font-size: 12px;
+    font-weight: 400;
+    color: hsl(0, 100%, 74%);
+    margin-top: 0.5em;
+    margin-bottom: 1.5em;
+
+    max-height: 0px; /* auto */
+    visibility: hidden; /* visible */
+}
+
+
+.button_box{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+.button_box button{
+    width: 80%;
+    height: 55px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: white;
+    background-color: hsl(154, 59%, 51%);
+    box-shadow: inset 0px -3px 0px 0px rgba(0,0,0,0.3);
+}
+.button_box p{
+    font-weight: 500;
+    height: auto;
+    width: 80%;
+    font-size: 10px;
+    text-align: center;
+    color: hsl(246, 25%, 77%);
+}
+.button_box p .span_red{
+    color: red ;
+}
+
+
+
+

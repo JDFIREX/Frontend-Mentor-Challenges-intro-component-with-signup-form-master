@@ -8,6 +8,9 @@
   
   <title>Frontend Mentor | Intro component with sign up form</title>
 
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
@@ -16,27 +19,83 @@
 </head>
 <body>
 
-  Learn to code by watching others
+    <main>
+      <div class="container">
 
-  See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
-  but understanding how developers think is invaluable. 
+        <div class="info">
+          <h1>Learn to code by watching others</h1>
+          <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+            but understanding how developers think is invaluable. </p>
+        </div>
 
-  Try it free 7 days then $20/mo. thereafter
+        <div class="form_section">
 
-  First Name 
-  Last Name 
-  Email Address
-  Password
+          <div class="free">
+            <p>
+              <b>Try it free 7 days</b> then $20/mo. thereafter
+            </p>
+          </div>
 
-  Claim your free trial 
+          <div class="form_box">
 
-  By clicking the button, you are agreeing to our Terms and Services
+            <form class="form" id="form">
+
+              <div class="name">
+                <div class="name_input">
+                  <input type="text" name="name" id="name" placeholder="First Name"> 
+                  <img src="images/icon-error.svg" alt="">
+                </div>
+                <p>First Name cannot be empty</p>
+              </div>
+
+              <div class="last">
+                <div class="last_input">
+                  <input type="text" name="last" id="last" placeholder="Last Name">
+                  <img src="images/icon-error.svg" alt="">
+                </div>
+                <p>Last Name cannot be empty</p>
+              </div>
+
+              <div class="email">
+                <div class="email_input">
+                  <input type="email" name="email" id="email" placeholder="Email Address">
+                  <img src="images/icon-error.svg" alt="">
+                </div>
+                <p>Looks like this is not an email</p>
+              </div>
+              
+              <div class="password">
+                <div class="password_input">
+                  <input type="password" name="password" id="password" placeholder="Password">
+                  <img src="images/icon-error.svg" alt="">
+                </div>
+                <p>Password cannot be empty</p>
+              </div>
+              
+            </form>
+
+            <div class="button_box">
+              <button type="submit" form="form">claim your free trial</button>
+              <p>By clicking the button, you are agreeing to our <span class="span_red">Terms and Services</span></p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </main>
+
+
+
   
-  <footer>
+  <footer style="width: auto; position: fixed ; bottom: 0px; left : 10px; color: black;">
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="https://www.frontendmentor.io/profile/JDFIREX" target="_blank">Jonatan Dajtrowski</a>.
     </p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
