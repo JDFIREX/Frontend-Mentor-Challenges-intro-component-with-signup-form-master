@@ -193,3 +193,133 @@ main::after{
 
 
 
+@media only screen and (max-width: 1440px){
+    body{
+        min-height: 800px;
+    }
+    main{
+        width: 100%;
+        height: 100%;
+        min-height: 800px;
+        align-items: flex-start;
+    }
+}
+@media only screen and (max-width: 1300px){
+    .form_box{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 1050px){
+    body{
+        min-height: 1000px;
+    }
+    main{
+        min-height: 1000px;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .info{
+        margin-top: 5em;
+        padding: 0;
+        width: 80%;
+    }
+    .info h1{
+        text-align: center;
+    }
+    .info p{
+        text-align: center;
+    }
+    .form_section{
+        margin-top: 3em;
+        width: 30em;
+    }
+    .free{
+        width: 100%;
+    }
+    .form_box{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 700px){
+    .info{
+        margin-top: 10em;
+        width: 90%;
+    }
+    .form_section{
+        margin-top: 4em;
+    }
+}
+@media only screen and (max-width: 550px){
+    body{
+        min-height: 1200px;
+    }
+    .form_section{
+        width: 25em;
+    }
+    .info h1{
+        font-size: 2em;
+    }
+    .free{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 0.9em;
+    }
+    .button_box p{
+        width: 60%;
+        font-size: 9px;
+    }
+}
+@media only screen and (max-width: 450px){
+    .container{
+        width:100vh !important;
+        height: 80%;
+    }
+    body{
+        min-height: 1000px;
+    }
+    .info{
+        width: 90%;
+    }
+    .info p{
+        font-size: 1.05em;
+    }
+    .form_section{
+        width: 90%;
+    }
+    .info h1{
+        font-size: 2em;
+    }
+    .free{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 0.9em;
+    }
+    .button_box p{
+        width: 60%;
+        font-size: 9px;
+    }
+    .name .name_input input,
+    .last .last_input input,
+    .email .email_input input,
+    .password .password_input input{
+        padding-right: 7%;
+    }
+}
+@media only screen and (max-width: 300px){
+    body{
+        min-height: 700px;
+        font-size: 14px;
+    }
+    .container{
+        transform: scale(0.9);
+    }
+}
+@media only screen and (max-width: 250px){
+    .container{
+        margin-top: 8em;
+        transform: scale(0.8);
+    }
+}
