@@ -14,7 +14,7 @@ body{
     justify-content: center;
     align-items: center;
 }
-main{
+.main{
     position: relative;
     width: 1440px;
     height: 900px;
@@ -25,7 +25,7 @@ main{
     justify-content: center;
     align-items: center;
 }
-main::after{
+.main::after{
     content: '';
     position: absolute;
     top: 0;
@@ -142,10 +142,10 @@ main::after{
 
     visibility: hidden; /* visible */
 }
-.name p,
-.last p,
-.email p,
-.password p{
+.name .error_msg,
+.last .error_msg,
+.email .error_msg,
+.password .error_msg{
     font-size: 12px;
     font-weight: 400;
     color: hsl(0, 100%, 74%);
@@ -197,7 +197,7 @@ main::after{
     body{
         min-height: 800px;
     }
-    main{
+    .main{
         width: 100%;
         height: 100%;
         min-height: 800px;
@@ -213,7 +213,7 @@ main::after{
     body{
         min-height: 1000px;
     }
-    main{
+    .main{
         min-height: 1000px;
     }
     .container{
